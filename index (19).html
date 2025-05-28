@@ -1,0 +1,268 @@
+<html class="scroll-smooth" lang="id" >
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Store Lumpia Ubby
+  </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+   tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {},
+    },
+  }
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 dark:bg-gray-900 min-h-screen flex flex-col transition-colors duration-300">
+  <header class="bg-purple-600 dark:bg-purple-800 shadow-md transition-colors duration-300">
+   <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-white">
+     Lumpia Ubby
+    </h1>
+    <nav class="space-x-6 text-white font-semibold text-sm sm:text-base">
+     <a class="hover:underline" href="#produk">
+      Produk
+     </a>
+     <a class="hover:underline" href="#harga">
+      Harga
+     </a>
+     <a class="hover:underline" href="#kontak">
+      Kontak
+     </a>
+    </nav>
+    <button aria-label="Toggle Dark Mode" id="darkModeToggle" class="ml-4 text-white focus:outline-none focus:ring-2 focus:ring-purple-300 rounded p-1">
+     <i class="fas fa-moon"></i>
+    </button>
+   </div>
+  </header>
+  <main class="flex-grow container mx-auto px-4 py-10 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+   <section class="text-center mb-16" id="hero">
+    <img alt="Lumpia coklat keju yang baru digoreng dengan lelehan coklat dan taburan keju parut di atasnya" class="mx-auto rounded-lg shadow-lg mb-6 max-w-full h-auto" height="300" src="https://i.imgur.com/rMPG3Kw.jpeg" width="600"/>
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-purple-700 dark:text-purple-400 mb-3">
+     Lumpia Ubby - Coklat &amp; Keju, dan Tanpa Coklat Keju
+    </h2>
+    <p class="max-w-xl mx-auto text-base sm:text-lg">
+     Nikmati lumpia segar dengan pilihan rasa coklat keju atau tanpa coklat keju. Harga terjangkau, rasa luar biasa!
+    </p>
+   </section>
+   <section class="mb-16" id="produk">
+    <h3 class="text-2xl font-bold text-purple-700 dark:text-purple-400 mb-8 text-center">
+     Produk Kami
+    </h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-4xl mx-auto">
+     <article class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center transition-colors duration-300">
+      <img alt="Lumpia coklat keju yang baru digoreng dengan lelehan coklat dan taburan keju parut di atasnya" class="rounded-md mb-4 w-full h-48 object-cover" height="200" src="https://i.imgur.com/rMPG3Kw.jpeg" width="300"/>
+      <h4 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">
+       Lumpia Coklat Keju
+      </h4>
+      <p class="text-center mb-4">
+       Lumpia dengan isian coklat dan keju yang meleleh, cocok untuk pencinta rasa manis dan gurih.
+      </p>
+      <ul class="font-semibold space-y-1 text-center">
+       <li>
+        1 pcs = Rp 3.000
+       </li>
+       <li>
+        2 pcs = Rp 5.000
+       </li>
+      </ul>
+     </article>
+     <article class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col items-center transition-colors duration-300">
+      <img alt="Lumpia tanpa coklat keju yang baru digoreng dengan kulit lumpia renyah berwarna keemasan" class="rounded-md mb-4 w-full h-48 object-cover" height="200" src="https://i.imgur.com/QueFVpv.jpeg" width="300"/>
+      <h4 class="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-2">
+       Lumpia Tanpa Coklat Keju
+      </h4>
+      <p class="text-center mb-4">
+       Lumpia original tanpa coklat dan keju, renyah dan lezat untuk cemilan sehari-hari.
+      </p>
+      <ul class="font-semibold space-y-1 text-center">
+       <li>
+        1 pcs = Rp 2.000
+       </li>
+       <li>
+        3 pcs = Rp 5.000
+       </li>
+      </ul>
+     </article>
+    </div>
+   </section>
+   <section class="mb-16 max-w-3xl mx-auto" id="harga">
+    <h3 class="text-2xl font-bold text-purple-700 dark:text-purple-400 mb-8 text-center">
+     Daftar Harga
+    </h3>
+    <table class="w-full text-left border-collapse border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden shadow-md transition-colors duration-300">
+     <thead class="bg-purple-600 dark:bg-purple-800 text-white">
+      <tr>
+       <th class="py-3 px-4 border border-purple-700">
+        Produk
+       </th>
+       <th class="py-3 px-4 border border-purple-700">
+        Jumlah
+       </th>
+       <th class="py-3 px-4 border border-purple-700">
+        Harga
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr class="bg-white dark:bg-gray-800 hover:bg-purple-50 dark:hover:bg-purple-900 transition-colors duration-300">
+       <td class="py-3 px-4 border border-gray-300 dark:border-gray-700">
+        Lumpia Coklat Keju
+       </td>
+       <td class="py-3 px-4 border border-gray-300 dark:border-gray-700">
+        1 pcs
+       </td>
+       <td class="py-3 px-4 border border-gray-300 dark:border-gray-700">
+        Rp 3.000
+       </td>
+      </tr>
+      <tr class="bg-gray-50 dark:bg-gray-700 hover:bg-purple-50 dark:hover:bg-purple-900 transition-colors duration-300">
+       <td class="py-3 px-4 border border-gray-300 dark:border-gray-700">
+        Lumpia Coklat Keju
+       </td>
+       <td class="py-3 px-4 border border-gray-300 dark:border-gray-700">
+        2 pcs
+       </td>
+       <td class="py-3 px-4 border border-gray-300 dark:border-gray-700">
+        Rp 5.000
+       </td>
+      </tr>
+      <tr class="bg-white dark:bg-gray-800 hover:bg-purple-50 dark:hover:bg-purple-900 transition-colors duration-300">
+       <td class="py-3 px-4 border border-gray-300 dark:border-gray-700">
+        Lumpia Tanpa Coklat Keju
+       </td>
+       <td class="py-3 px-4 border border-gray-300 dark:border-gray-700">
+        1 pcs
+       </td>
+       <td class="py-3 px-4 border border-gray-300 dark:border-gray-700">
+        Rp 2.000
+       </td>
+      </tr>
+      <tr class="bg-gray-50 dark:bg-gray-700 hover:bg-purple-50 dark:hover:bg-purple-900 transition-colors duration-300">
+       <td class="py-3 px-4 border border-gray-300 dark:border-gray-700">
+        Lumpia Tanpa Coklat Keju
+       </td>
+       <td class="py-3 px-4 border border-gray-300 dark:border-gray-700">
+        3 pcs
+       </td>
+       <td class="py-3 px-4 border border-gray-300 dark:border-gray-700">
+        Rp 5.000
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </section>
+   <section class="max-w-3xl mx-auto mb-16" id="kontak">
+    <h3 class="text-2xl font-bold text-purple-700 dark:text-purple-400 mb-8 text-center">
+     Kontak &amp; Pemesanan
+    </h3>
+    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300">
+     <form class="space-y-6" id="orderForm" method="POST">
+      <div>
+       <label class="block text-gray-700 dark:text-gray-300 font-semibold mb-2" for="nama">
+        Nama
+       </label>
+       <input class="w-full border border-gray-300 dark:border-gray-600 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100" id="nama" name="nama" placeholder="Masukkan nama Anda" required="" type="text"/>
+      </div>
+      <div>
+       <label class="block text-gray-700 dark:text-gray-300 font-semibold mb-2" for="telepon">
+        Nomor Telepon
+       </label>
+       <input class="w-full border border-gray-300 dark:border-gray-600 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100" id="telepon" name="telepon" placeholder="Masukkan nomor telepon" required="" type="tel"/>
+      </div>
+      <div>
+       <label class="block text-gray-700 dark:text-gray-300 font-semibold mb-2" for="alamat">
+        Alamat Pengiriman
+       </label>
+       <textarea class="w-full border border-gray-300 dark:border-gray-600 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100" id="alamat" name="alamat" placeholder="Masukkan alamat pengiriman atau tulis 'Bisa langsung kirim di SMA Negeri 1 Bengkayang'" rows="3"></textarea>
+      </div>
+      <div>
+       <label class="block text-gray-700 dark:text-gray-300 font-semibold mb-2" for="pesanan">
+        Pesanan
+       </label>
+       <textarea class="w-full border border-gray-300 dark:border-gray-600 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100" id="pesanan" name="pesanan" placeholder="Tuliskan pesanan Anda, misal: 2 Lumpia Coklat Keju, 3 Lumpia Tanpa Coklat Keju" required="" rows="4"></textarea>
+      </div>
+      <button class="w-full bg-purple-600 hover:bg-purple-700 dark:bg-purple-700 dark:hover:bg-purple-800 text-white font-bold py-3 rounded-md transition-colors" type="submit">
+       Kirim Pesanan
+      </button>
+     </form>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-purple-600 dark:bg-purple-800 text-white py-6 transition-colors duration-300">
+   <div class="container mx-auto px-4 text-center text-sm sm:text-base">
+    <p>
+     © 2024 Lumpia Ubby. Semua hak cipta dilindungi.
+    </p>
+    <p class="mt-1">
+     Hubungi kami:
+     <a class="underline hover:text-purple-300" href="tel:+6289612843118">
+      +62 896-1284-3118
+     </a>
+    </p>
+   </div>
+  </footer>
+  <script>
+   const toggleBtn = document.getElementById('darkModeToggle');
+   const htmlEl = document.documentElement;
+   const icon = toggleBtn.querySelector('i');
+
+   // Load saved mode from localStorage
+   if(localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+     htmlEl.classList.add('dark');
+     icon.classList.remove('fa-moon');
+     icon.classList.add('fa-sun');
+   }
+
+   toggleBtn.addEventListener('click', () => {
+     htmlEl.classList.toggle('dark');
+     if(htmlEl.classList.contains('dark')) {
+       localStorage.setItem('theme', 'dark');
+       icon.classList.remove('fa-moon');
+       icon.classList.add('fa-sun');
+     } else {
+       localStorage.setItem('theme', 'light');
+       icon.classList.remove('fa-sun');
+       icon.classList.add('fa-moon');
+     }
+   });
+
+   document.getElementById('orderForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nama = document.getElementById('nama').value.trim();
+      const telepon = document.getElementById('telepon').value.trim();
+      const alamat = document.getElementById('alamat').value.trim();
+      const pesanan = document.getElementById('pesanan').value.trim();
+
+      if (!nama || !telepon || !pesanan) {
+        alert('Mohon lengkapi semua data pesanan.');
+        return;
+      }
+
+      // Encode message for WhatsApp
+      let message = `Halo, saya ingin memesan:\nNama: ${nama}\nNomor Telepon: ${telepon}\n`;
+      if(alamat) {
+        message += `Alamat Pengiriman: ${alamat}\n`;
+      }
+      message += `Pesanan: ${pesanan}`;
+      const encodedMessage = encodeURIComponent(message);
+
+      // WhatsApp number to send the order
+      const waNumber = '6289612843118';
+
+      // Open WhatsApp chat with pre-filled message
+      const waUrl = `https://wa.me/${waNumber}?text=${encodedMessage}`;
+      window.open(waUrl, '_blank');
+    });
+  </script>
+ </body>
+</html>
